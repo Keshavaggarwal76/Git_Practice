@@ -10,5 +10,9 @@ git commit -m "message"  - commit all files
 git log                  - give timestamp of commits
 rm -rf .git              - removes .git repository
 touch file_name          - makes file in repository
+git diff                 - compare working directory with staging area
+git diff --stage         - compare prvious commit with staging area
+
+
 
 
