@@ -5,3 +5,4 @@ git init                 - initialise repository
 git add --a              - add all files to staging area
 git commit -m "message"  - commit all files
 git log                  - give timestamp of commits
+rm -rf .git              - removes .git repository
