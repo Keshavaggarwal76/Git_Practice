@@ -1,1 +1,7 @@
-this is version 1 of my project
+this is version 1 of my project.
+
+git status                    - gives status of repository
+git init                      - initialise repository
+git add --a                   - add all files to staging area
+git commit -m "message"       - commit all files
+git log                       - give timestamp of commits
