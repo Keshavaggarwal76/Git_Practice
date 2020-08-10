@@ -1,5 +1,8 @@
 this is version 1 of my project.
 
+if we write *.log in .gitignore file & dir/ then it ignore all log file & dir but if we write /dir/ then only ignore
+outside dir folder not inside dir folder of static.
+
 git status               - gives status of repository & if we change in any file than it detects it on running again
 git init                 - initialise repository
 git add --a/.            - add all files to staging area, use --a or .
@@ -7,4 +10,5 @@ git commit -m "message"  - commit all files
 git log                  - give timestamp of commits
 rm -rf .git              - removes .git repository
 touch file_name          - makes file in repository
+
 
