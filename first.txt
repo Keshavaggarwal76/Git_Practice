@@ -1,7 +1,7 @@
 this is version 1 of my project.
 
-git status                    - gives status of repository
-git init                      - initialise repository
-git add --a                   - add all files to staging area
-git commit -m "message"       - commit all files
-git log                       - give timestamp of commits
+git status               - gives status of repository & if we change in any file than it detects it on running again
+git init                 - initialise repository
+git add --a              - add all files to staging area
+git commit -m "message"  - commit all files
+git log                  - give timestamp of commits
