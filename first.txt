@@ -11,6 +11,7 @@ git init                   - initialise repository
 git add --a/.              - stage new & modified which are not deleted if we delete something it will be skiped
 git add -A                 - stage all
 git add -u                 - stage modified & deleted, without staging new files
+git clone repo address     - clone external file in to repository in which git opened
 git commit -m "message"    - commit all files
 git commit -a -m "message" - commit all files that are tracked or in staging area, skip that are untracked("second,txt")
 git log                    - give timestamp of commits
@@ -22,7 +23,8 @@ git reset file_name        - unstage the files
 git rm file_name           - Remove file & stage it, commit it after afterward to finalise
 git checkout file_name     - Move back to the previous commit
 git checkout .             - All files Move back to the previous commit
-
-
+git mv file_name file2     - Rename file & stage it.
+git rm --cached f          - Untrack the file (if we write f in .gitignore then make changes to it, 
+                                                it show modified as we tracked it previously before addind to .gitignore)
 
 
