@@ -18,7 +18,9 @@ rm -rf .git                - removes .git repository
 touch file_name            - makes file in repository
 git diff                   - compare working directory with staging area
 git diff --staged          - compare prvious commit with staging area
-
+git reset file_name        - Move back to the previous commit
+git rm file_name           - Remove file & stage it, commit it after afterward to finalise
+git checkout file_name     -
 
 
 
