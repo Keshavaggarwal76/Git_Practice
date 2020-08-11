@@ -3,15 +3,23 @@ this is version 1 of my project.
 if we write *.log in .gitignore file & dir/ then it ignore all log file & dir but if we write /dir/ then only ignore
 outside dir folder not inside dir folder of static.
 
-git status               - gives status of repository & if we change in any file than it detects it on running again
-git init                 - initialise repository
-git add --a/.            - add all files to staging area, use --a or .
-git commit -m "message"  - commit all files
-git log                  - give timestamp of commits
-rm -rf .git              - removes .git repository
-touch file_name          - makes file in repository
-git diff                 - compare working directory with staging area
-git diff --staged        - compare prvious commit with staging area
+if we rename file name from a to b, & then run git status it shows a is deleted & b is added. Then if we run git add .
+it shows a is renamed to b.
+
+git status                 - gives status of repository & if we change in any file than it detects it on running again
+git init                   - initialise repository
+git add --a/.              - stage new & modified which are not deleted if we delete something it will be skiped
+git add -A                 - stage all
+git add -u                 - stage modified & deleted, without staging new files
+git commit -m "message"    - commit all files
+git commit -a -m "message" - commit all files that are tracked or in staging area, skip that are untracked("second,txt")
+git log                    - give timestamp of commits
+rm -rf .git                - removes .git repository
+touch file_name            - makes file in repository
+git diff                   - compare working directory with staging area
+git diff --staged          - compare prvious commit with staging area
+
+
 
 
 
