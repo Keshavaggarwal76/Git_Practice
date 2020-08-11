@@ -1,8 +1,5 @@
-this is version 1 of my project.
-
 if we write *.log in .gitignore file & dir/ then it ignore all log file & dir but if we write /dir/ then only ignore
 outside dir folder not inside dir folder of static.
-
 if we rename file name from a to b, & then run git status it shows a is deleted & b is added. Then if we run git add .
 it shows a is renamed to b.
 
@@ -11,10 +8,12 @@ git init                   - initialise repository
 git add --a/.              - stage new & modified which are not deleted if we delete something it will be skiped
 git add -A                 - stage all
 git add -u                 - stage modified & deleted, without staging new files
-git clone repo address     - clone external file in to repository in which git opened
+git clone repo_address     - clone external file in to repository in which git opened
+git clone repo_address .   - clone external file in to repository in which git opened without creating a new folder
 git commit -m "message"    - commit all files
 git commit -a -m "message" - commit all files that are tracked or in staging area, skip that are untracked("second,txt")
 git log                    - give timestamp of commits
+notebook .gitignore        - opens gitignore in notebook format
 rm -rf .git                - removes .git repository
 touch file_name            - makes file in repository
 git diff                   - compare working directory with staging area
