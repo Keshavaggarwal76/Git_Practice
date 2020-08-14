@@ -15,8 +15,20 @@ git clone repo_address .   - clone external file in to repository in which git o
 
 git commit -m "message"    - commit all files
 git commit -a -m "message" - commit all files that are tracked or in staging area, skip that are untracked("second,txt")
+git commit --amend         - then window open press (I,Esc,:,W,Q) , used to change the comment of previous commit 
 
 git log                    - give timestamp of commits
+git log -p                 - shows all the things which are added or removed with timestamp
+git log -p -n              - shows n comments which are added or removed with timestamp
+git log --stat             - shows in short who have changed what, with timestamp
+git log --pretty=oneline   - shows the changes done by one person in one line & by other in another line
+git log --pretty=short     - shows in short about the changes
+git log --pretty=full      - shows in some details about the changes
+git log --since=2.days     - shows data of previous 2 days
+git log --since=2.weeks    - shows data of previous 2 weeks
+git log --since=2.years    - shows data of previous 2 years
+git log --since=2.months   - shows data of previous 2 months
+git log --pretty=format:x  - in place of "x" we write "%h --%(an/ae/p/etc.)", where an means author name, etc
 
 notebook .gitignore        - opens gitignore in notebook format
 rm -rf .git                - removes .git repository
@@ -26,10 +38,11 @@ git diff                   - compare working directory with staging area
 git diff --staged          - compare prvious commit with staging area
 
 git reset file_name        - unstage the files
+git restore --staged f     - unstage the file f
 git rm file_name           - Remove file & stage it, commit it after afterward to finalise
 
-git checkout file_name     - Move back to the previous commit
-git checkout .             - All files Move back to the previous commit
+git checkout -- f_name     - Move back to the previous commit
+git checkout ./-f             - All files Move back to the previous commit
 git mv file_name file2     - Rename file & stage it.
 
 git branch                 - shows master
@@ -39,7 +52,10 @@ git merge f_name           - merge f_name with master
 git branch -d f_name       - deletes f_name branch
 git push origin --delete f - deletes f branch from git also
 
+git remote add origin link - connect your repository with github
+git remote -v              - shows link name of fetch & push
 git push origin branchname - push branchname (eg: master, f_name)
+git push -u origin master  - push code
 
 git rm --cached f          - Untrack the file (if we write f in .gitignore then make changes to it, 
                                                 it show modified as we tracked it previously before addind to .gitignore)
