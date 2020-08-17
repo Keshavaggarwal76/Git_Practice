@@ -49,16 +49,21 @@ git mv file_name file2     - Rename file & stage it.
 
 git branch                 - shows master
 git branch f_name          - creates a another branch of master as f_name but didn't switch to f_name
+git branch -v              - shows the message of last commits in all branches
+git branch --merged        - shows branches which are already merged, so we can delete them now 
+git branch --no-merged     - shows branches which are not merged
 git checkout f_name        - it will switch branch from master to f_name
 git checkout -b f_name     - creates a another branch of master as f_name & it will switch branch from master to f_name
-
 git merge f_name           - merge f_name with master
-git branch -d f_name       - deletes f_name branch
+git branch -d f_name       - deletes f_name branch & shows error if f_name is not merged with master
+git branch -D f_name       - deletes f_name branch & do not shows error if b_name is not merged with master
 git push origin --delete f - deletes f branch from git also
 
 git remote add origin link - connect your repository with github
 git remote -v              - shows link name of fetch & push
 git push origin branchname - push branchname (eg: master, f_name)
+git push origin b_name:b   - push b_name as b in repository
+git push -d origin b_name  - deletes b_name
 git push -u origin master  - push code
 
 git rm --cached f          - Untrack the file (if we write f in .gitignore then make changes to it, 
