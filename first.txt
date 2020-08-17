@@ -70,3 +70,14 @@ git rm --cached f          - Untrack the file (if we write f in .gitignore then 
                                                 it show modified as we tracked it previously before addind to .gitignore)
 
 
+              Only your folder gets downloaded.
+ 
+git init
+git remote add origin -f <URL>
+git config core.sparseCheckout true # enable this
+cat >> .git/info/sparsecheckout
+<folder>
+git pull origin master
+ 
+
+
